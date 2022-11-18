@@ -1,0 +1,39 @@
+@use './import';
+html {
+	font-size: import.spvw(16);
+	@include import.mqMin(import.$dpTabPt) {
+		font-size: 16px;
+	}
+}
+body {
+	background-color: var(--tsbk-color-base);
+	color: var(--tsbk-color-base-font);
+	font-family: 'Noto Sans JP', sans-serif;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+h1,h2,h3,h4,h5,h6,strong,b {
+	font-weight: bold;
+}
+*{
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+a {
+	text-decoration: underline;
+	color : var(--tsbk-color-link);
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+ul,ol {
+	list-style: none;
+}
+
+#wpadminbar {
+	position: fixed !important;
+}

@@ -1,0 +1,108 @@
+@use '../foundation/import';
+
+.l-header {
+	transition: .5s;
+	background-color: var(--tsbk-color-base);
+	width: 100%;
+	z-index: 9900;
+	@include import.mqMin(import.$dpTabPt) {
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	@include import.mqMax(import.$dpMobile) {
+		padding-top: import.spvw(4);
+		padding-bottom: import.spvw(4);
+	}
+	&.is-scrolled {
+		position: fixed;
+		top: 0;
+		box-shadow: 0 1px 5px 0 var(--tsbk-color-black);
+	}
+	.c-container {
+		display: flex;
+		justify-content:space-between;
+		align-items: center;
+	}
+	&__heading {
+		width: 200px;
+		margin: 0;
+		line-height: 1;
+		&.is-invalid {
+			opacity: 0;
+			pointer-events: none;
+		}
+		@include import.mqMin(import.$dpTabPt) {
+			width: 160px;
+		}
+		@include import.mqMax(import.$dpMobile) {
+			width: import.spvw(160);
+		}
+		img {
+			line-height: 1;
+			width: auto;
+			height: auto;
+			max-width: 100%;
+			height: import.spvw(40);
+			@include import.mqMin(import.$dpTabPt) {
+				max-height: 44px;
+			}
+		}
+
+
+	}
+	&__nav {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.l-header-utility {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	&__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		background-color: var(--tsbk-color-acc);
+		text-align: center;
+		color: var(--tsbk-color-acc-font);
+		@include import.mqMin(import.$dpTabPt) {
+			width: 44px;
+			height: 44px;
+			margin-left: 12px;
+		}
+		@include import.mqMax(import.$dpMobile) {
+			width: import.spvw(40);
+			height: import.spvw(40);
+			margin-left: import.spvw(10);
+		}
+		&#searchBtn {
+			z-index: 9800;
+		}
+		&#gnavBtn {
+			z-index: 9999;
+		}
+	}
+}
+.l-header-utility-ico , .l-header-utility-ico--close {
+	@include import.mqMin(import.$dpTabPt) {
+		width: 17.6px;
+		height: 17.6px;
+	}
+	@include import.mqMax(import.$dpMobile) {
+		width: import.spvw(17.6);
+		height: import.spvw(17.6);
+	}
+}
+.l-header-utility-ico {
+	fill:var(--tsbk-color-acc-font)  !important;
+	stroke:var(--tsbk-color-acc-font)  !important;
+}
+.l-header-utility-ico--close {
+	display: none;
+	stroke: var(--tsbk-color-acc-font) !important;
+}
+
+

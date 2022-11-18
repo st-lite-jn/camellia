@@ -1,0 +1,37 @@
+@use '../foundation/import';
+@include import.wpBlocks {
+	.wp-marquee-edit,
+	.wp-marquee {
+		width: 100%;
+	}
+	.wp-marquee {
+		background-color: #ddf;
+		padding: 0.5em 0;
+		overflow: hidden;
+		margin-bottom: 10px;
+		position: relative;
+		p {
+			margin: 0;
+			padding-left: 100%;
+			display: inline-block;
+			white-space: nowrap;
+			animation-name: marquee;
+			animation-timing-function: linear;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			&:after {
+				content: "";
+				white-space: nowrap;
+				padding-right: 50px;
+			}
+		}
+	}
+}
+@keyframes marquee {
+	from {
+	  transform: translate(0%);
+	}
+	99%, to {
+	  transform: translate(-100%);
+	}
+ }

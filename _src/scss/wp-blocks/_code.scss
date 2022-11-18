@@ -1,0 +1,13 @@
+@use '../foundation/import';
+
+.wp-block-code {
+	background-color: var(--tsbk-color-sub);
+	border: solid 1px var(--tsbk-color-border);
+	padding: import.spvw(8);
+	color: var(--tsbk-color-sub-font);
+	font-size: 1rem;
+	@include import.mqMin(import.$dpTabPt) {
+		padding: 16px;
+	}
+}
+

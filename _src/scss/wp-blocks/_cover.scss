@@ -1,0 +1,11 @@
+@use '../foundation/import';
+
+.wp-block-cover {
+	&.is-style-container-over {
+		width: 100vw;
+		margin-right: calc(50% - 50vw);
+		margin-left: calc(50% - 50vw);
+		overflow: hidden;
+	}
+}
+

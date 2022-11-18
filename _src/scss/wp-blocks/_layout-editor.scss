@@ -1,0 +1,54 @@
+@use '../foundation/import';
+body {
+	overflow: hidden;
+	box-sizing: border-box;
+	width: 100%;
+	background-color : var( --tsbk-color-base );
+	color : var(--tsbk-color-base-font );
+	@include import.container;
+	font-family: 'Noto Sans JP', sans-serif;
+	* {
+		box-sizing: border-box;
+	}
+	> * {
+		margin-bottom: 0;
+		margin-top: import.spvw(32);
+		@include import.mqMin(import.$dpTabPt) {
+			margin-top: 40px;
+		}
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	p {
+		margin: 0;
+		line-height: 1.75;
+		font-size: 1rem;
+		 + p {
+			 margin-top: 1em;
+		 }
+	}
+	figure {
+		figcaption {
+			margin-top: import.spvw(6);
+			margin-bottom: 0;
+			text-align: center;
+			font-size: .5rem;
+			@include import.mqMin(import.$dpTabPt) {
+				margin-top: 8px;
+			}
+		}
+	}
+}
+
+.wp-block {
+	overflow: hidden;
+	max-width: none !important;
+	width: auto;
+}
+.editor-post-title {
+	@include import.containerEditorBlock;
+}
+.is-root-container {
+	@include import.containerEditorBlock;
+}

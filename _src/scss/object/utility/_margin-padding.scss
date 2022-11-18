@@ -1,0 +1,56 @@
+@use '../../foundation/import';
+@use "sass:math";
+
+$num: 4;
+@for $i from 0 through 20 {
+	$value : $i * $num;
+	$valueSmart : math.div($value ,2);
+	.u-mt--#{$i * $num} {
+		margin-top : import.spvw($valueSmart);
+		@include import.mqMin(import.$dpTabPt) {
+			margin-top : #{$value}px;
+		}
+	}
+	.u-mr--#{$i * $num} {
+		margin-right : import.spvw($valueSmart);
+		@include import.mqMin(import.$dpTabPt) {
+			margin-right : #{$value}px;
+		}
+	}
+	.u-mb--#{$i * $num} {
+		margin-bottom : import.spvw($valueSmart);
+		@include import.mqMin(import.$dpTabPt) {
+			margin-bottom : #{$value}px;
+		}
+	}
+	.u-ml--#{$i * $num} {
+		margin-left : import.spvw($valueSmart);
+		@include import.mqMin(import.$dpTabPt) {
+			margin-left : #{$value}px;
+		}
+	}
+	.u-pt--#{$i * $num} {
+		padding-top : import.spvw($valueSmart);
+		@include import.mqMin(import.$dpTabPt) {
+			padding-top : #{$value}px;
+		}
+	}
+	.u-pr--#{$i * $num} {
+		padding-right : import.spvw($valueSmart);
+		@include import.mqMin(import.$dpTabPt) {
+			padding-right : #{$value}px;
+		}
+	}
+	.u-pb--#{$i * $num} {
+		padding-bottom : import.spvw($valueSmart);
+		@include import.mqMin(import.$dpTabPt) {
+			padding-bottom : #{$value}px;
+		}
+	}
+	.u-pl--#{$i * $num} {
+		padding-left : import.spvw($valueSmart);
+		@include import.mqMin(import.$dpTabPt) {
+			padding-left : #{$value}px;
+		}
+	}
+}

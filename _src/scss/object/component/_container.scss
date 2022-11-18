@@ -1,0 +1,5 @@
+@use '../../foundation/import';
+
+.c-container {
+	@include import.container;
+}

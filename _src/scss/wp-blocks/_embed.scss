@@ -1,0 +1,11 @@
+@use '../foundation/import';
+
+.wp-block-embed {
+	margin-bottom: 0;
+	iframe {
+		width: 100%;
+	}
+	figcaption {
+		margin-bottom: 0;
+	}
+}

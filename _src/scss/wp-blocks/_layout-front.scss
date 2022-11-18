@@ -1,0 +1,32 @@
+@use '../foundation/import';
+
+.wp-front-blocks , .is-layout-flow {
+	> * {
+		+ * {
+			@include import.mtM;
+		}
+	}
+	h1,h2,h3,h4,h5,h6 {
+		+ * {
+			@include import.mtS;
+		}
+	}
+	p {
+		+ p {
+			@include import.mtXS;
+		}
+	}
+	figure {
+		margin-bottom: 0;
+		figcaption {
+			margin-bottom: 0;
+			@include import.mtXS;
+			text-align: center;
+			font-size: .5rem;
+		}
+	}
+}
+.wp-front-blocks {
+	@include import.mtXL;
+}
+

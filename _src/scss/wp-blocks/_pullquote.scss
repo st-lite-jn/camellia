@@ -1,0 +1,17 @@
+@use '../foundation/import';
+
+
+.wp-block-pullquote {
+	margin-bottom: 0;
+	border-top: 4px solid currentColor;
+	border-bottom: 4px solid currentColor;
+	p {
+		font-size: 1.5rem;
+	}
+	cite {
+		display: block;
+		margin-top: 1em;
+		font-size: 1rem;
+	}
+}
+

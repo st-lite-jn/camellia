@@ -1,0 +1,39 @@
+@use '../foundation/import';
+.l-footer-wrapper {
+	margin-top: auto;
+}
+.l-footer {
+	padding-top: import.spvw(16);
+	padding-bottom: import.spvw(16);
+	background-color: var(--tsbk-color-main);
+	color: var(--tsbk-color-main-font);
+	@include import.mqMin(import.$dpTabPt) {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+	&__copyright {
+		margin-top: import.spvw(20);
+		text-align: center;
+		font-size: 0.75rem;
+		@include import.mqMin(import.$dpTabPt) {
+			margin-top: 40px;
+		}
+	}
+}
+
+.l-fnav {
+	text-align: center;
+	&__item {
+		display: inline-block;
+		color: var(--tsbk-color-main-font);
+		@include import.mqMin(import.$dpTabPt) {
+			margin-right: 8px;
+			margin-left: 8px;
+			font-size: 0.75rem;
+		}
+		@include import.mqMax(import.$dpMobile) {
+			margin-right:import.spvw(8);
+			margin-left: import.spvw(8);
+		}
+	}
+}
