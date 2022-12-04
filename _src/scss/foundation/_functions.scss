@@ -1,7 +1,0 @@
-@use "sass:math";
-// スマートフォン用のVWの計算
-// デザインに合わせて$referenceValueを編集
-$referenceValue:428;
-@function spvw($value) {
-	@return math.div($value , $referenceValue ) * 100 + vw;
-}
