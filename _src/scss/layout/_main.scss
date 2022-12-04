@@ -1,0 +1,8 @@
+@use '../foundation/import';
+
+.l-main {
+	padding-bottom: import.spvw(40);
+	@include import.mqMin(import.$dpS){
+		padding-bottom: 80px;
+	}
+}

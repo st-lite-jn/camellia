@@ -1,0 +1,43 @@
+@use '../foundation/import';
+
+.wp-block-post-terms {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .25em;
+	@include import.mtS;
+	* {
+		text-decoration: none;
+	}
+	&.is-cat {
+		a {
+			padding: import.spvw(4) import.spvw(8);
+			background-color: var(--tsbk-color-acc);
+			border-radius: import.spvw(10);
+			color: var(--tsbk-color-acc-font);
+			font-size: .75rem;
+			transition: .5s;
+			@include import.mqMin(import.$dpS) {
+				border-radius: 10px;
+				padding: 4px 8px;
+			}
+			&:hover{
+				opacity: .5;
+			}
+		}
+	}
+	&.is-tag {
+		a {
+			color: var(--tsbk-color-base-font);
+			font-size: .75rem;
+			font-weight: bold;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.wp-block-post-excerpt {
+	&__more-text {
+		@include import.mtXS;
+	}
+}

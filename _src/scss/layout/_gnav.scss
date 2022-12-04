@@ -1,0 +1,197 @@
+@use '../foundation/import';
+.l-gnav{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	max-height: 100vh;
+	background-color: var(--tsbk-color-base);
+	vertical-align: middle;
+	z-index: 9850;
+	overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    ul {
+        list-style: none;
+        a {
+            text-decoration: none;
+        }
+    }
+	@include import.mqMin(1920px) {
+		width: 40%;
+		right: - 40%;
+	}
+	@media screen and (min-width: 1366px) and (max-width: 1919px) {
+		width: 26.35431918%;
+		right: - 26.35431918%;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1365px) {
+		width: 360px;
+		right: - 360px;
+	}
+	@include import.mqMax(import.$dpXS) {
+		padding-right: import.spvw(24);
+		padding-left: import.spvw(24);
+		right: -74.66%;
+		width: 74.66%;
+	}
+	a {
+		display: none;
+	}
+	&.is-opened {
+		right: 0;
+		@include import.mqMin(1920px) {
+			animation: openLarge .3s linear 1 forwards;
+		}
+		@media screen and (min-width: 1366px) and (max-width: 1919px) {
+			animation: openMediumLarge .3s linear 1 forwards;
+		}
+		@media screen and (min-width: 768px) and (max-width: 1365px) {
+			animation: openMedium .3s linear 1 forwards;
+		}
+		@include import.mqMax(import.$dpXS) {
+			animation: openSmart .3s linear 1 forwards;
+		}
+		a {
+			display: block;
+		}
+	}
+	&.is-closed {
+		@include import.mqMin(1920px) {
+			right: - 40%;
+			animation: closeLarge .3s linear 1 forwards;
+		}
+		@media screen and (min-width: 1366px) and (max-width: 1919px) {
+			right: - 26.35431918%;
+			animation: closeMediumLarge .3s linear 1 forwards;
+		}
+		@media screen and (min-width: 768px) and (max-width: 1365px) {
+			right: - 360px;
+			animation: closeMedium .3s linear 1 forwards;
+		}
+		@include import.mqMax(import.$dpXS) {
+			right: -74.66%;
+			animation: closeSmart .3s linear 1 forwards;
+		}
+	}
+	.l-gnav-main {
+		display: block;
+		height: auto;
+		@include import.mqMin(import.$dpS){
+			padding-bottom:74px;
+		}
+		@media screen and (min-width: 1366px) {
+			width: 65%;
+		}
+		@media screen and (min-width: 768px) and (max-width: 1365px) {
+			width: 234px;
+		}
+		@include import.mqMax(import.$dpXS){
+			width: 100%;
+			padding-bottom: import.spvw(74);
+		}
+		&__item {
+			position: relative;
+			a {
+				border-bottom: dashed 1px var(--tsbk-color-base-font) ;
+				line-height: 1.33;
+				color: var(--tsbk-color-base-font) ;
+				font-weight: 600;
+				font-size: 1.25rem;
+				@include import.mqMin(import.$dpS){
+					padding-top: 16px;
+					padding-bottom: 16px;
+				}
+				@include import.mqMax(import.$dpXS){
+					padding-top: import.spvw(16);
+					padding-bottom: import.spvw(8);
+				}
+			}
+			.l-gnav-sub {
+				@include import.mqMin(import.$dpS){
+					margin-left: 32px;
+				}
+				@include import.mqMax(import.$dpXS){
+					margin-left: import.spvw(16);
+				}
+			}
+		}
+	}
+}
+
+@keyframes openLarge {
+	0% {
+        right: -40%;
+	}
+    100% {
+        right: 0;
+    }
+}
+@keyframes openMediumLarge {
+    0% {
+        right: -26.35431918%;
+	}
+    100% {
+        right: 0;
+    }
+}
+@keyframes openMedium {
+    0% {
+        right: -360px;
+	}
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes openSmart {
+	0% {
+		right: -74.66%;
+	}
+	100% {
+		right: 0;
+	}
+}
+@keyframes closeLarge {
+	0% {
+        right: 0;
+	}
+    100% {
+        right: -40%;
+    }
+}
+@keyframes closeMediumLarge {
+    0% {
+        right: 0;
+	}
+    100% {
+        right: -26.35431918%;
+    }
+}
+@keyframes closeMediumLarge {
+    0% {
+        right: 0;
+	}
+    100% {
+        right: -26.35431918%;
+    }
+}
+@keyframes closeMedium {
+	0% {
+		right:0;
+	}
+	100% {
+		right: -360px;
+	}
+}
+@keyframes closeSmart {
+	0% {
+		right:0;
+	}
+	100% {
+		right: -74.66%;
+	}
+}

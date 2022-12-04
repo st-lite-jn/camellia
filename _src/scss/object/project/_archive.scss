@@ -1,0 +1,18 @@
+@use '../../foundation/import';
+
+.p-archive-ttl {
+	position: relative;
+	min-height: import.spvw(80);
+	@include import.baseColorBlock(var(--tsbk-color-base), var(--tsbk-color-light-gray), var(--tsbk-color-base-font) );
+	@include import.mqMin(import.$dpS) {
+		min-height: 96px;
+	}
+	&__label {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 100%;
+		transform: translate(-50% ,-50%);
+		text-align: center;
+	}
+}

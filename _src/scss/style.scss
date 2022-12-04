@@ -1,0 +1,83 @@
+@charset "utf-8";
+@use "../../node_modules/ress/dist/ress.min.css";
+// ==========================================================================
+// Foundation
+// ==========================================================================
+
+@use "foundation/colors";
+@use "foundation/preset-font-size";
+@use "foundation/init";
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+@use "layout/wrapper";
+@use "layout/header";
+@use "layout/main";
+@use "layout/footer";
+// ==========================================================================
+// WP Blocks
+// ==========================================================================
+@use "wp-blocks/layout-front";
+
+//テキスト
+@use "wp-blocks/heading";
+@use "wp-blocks/paragraph";
+@use "wp-blocks/list";
+@use "wp-blocks/quote";
+@use "wp-blocks/code";
+@use "wp-blocks/pullquote";
+@use "wp-blocks/table";
+
+//メディア
+@use "wp-blocks/video";
+@use "wp-blocks/cover";
+
+//デザイン
+@use "wp-blocks/post-terms";
+@use "wp-blocks/button";
+@use "wp-blocks/separator";
+@use "wp-blocks/spacer";
+
+//ウィジェット
+@use "wp-blocks/latest-posts";
+
+//テーマ
+@use "wp-blocks/query";
+
+//埋め込み
+@use "wp-blocks/embed";
+
+//オプション
+@use "wp-blocks/link";
+@use "wp-blocks/marquee";
+
+// ==========================================================================
+// Object
+// ==========================================================================
+// -----------------------------------------------------------------
+// Utility
+// -----------------------------------------------------------------
+
+@use "object/utility/animation";
+@use "object/utility/align";
+@use "object/utility/margin-padding";
+@use "object/utility/over-container";
+
+// -----------------------------------------------------------------
+// Component
+// -----------------------------------------------------------------
+@use "object/component/container";
+@use "object/component/input";
+
+// -----------------------------------------------------------------
+// Project
+// -----------------------------------------------------------------
+@use "object/project/breadcrumb";
+@use "object/project/pagination";
+@use "object/project/archive";
+@use "object/project/card";
+@use "object/project/content-header";
+@use "object/project/comment";
+
+

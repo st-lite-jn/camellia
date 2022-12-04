@@ -1,0 +1,72 @@
+@use '../foundation/import';
+.button {
+	display: inline-block;
+	padding: import.spvw(8) import.spvw(12);
+	background: var(--tsbk-color-link);
+	border : solid 1px var(--tsbk-color-link);
+	border-radius: 8px;
+	text-decoration: none;
+	text-align: center;
+	color: var(--tsbk-color-white);
+	font-size: 1rem;
+	@include import.mqMin(import.$dpS) {
+		padding: 8px 16px;
+	}
+	&.is-outlined {
+		background: var(--tsbk-color-white);
+		color: var(--tsbk-color-link);
+	}
+	&--mini {
+		@extend .button;
+		padding: import.spvw(4) import.spvw(8);
+		font-size: 0.75rem;
+		@include import.mqMin(import.$dpS) {
+			padding: 8px 12px;
+		}
+	}
+}
+
+a,button,input {
+	&.button {
+		&:hover {
+			background: var(--tsbk-color-white);
+			color: var(--tsbk-color-link);
+		}
+		&.is-outlined {
+			&:hover {
+				background: var(--tsbk-color-link);
+				color: var(--tsbk-color-white);
+			}
+		}
+	}
+}
+
+//ブロックエディタのボタン
+.wp-block-buttons {
+	.wp-block-button {
+		&__link {
+			&:not(.has-background) {
+				@extend .button;
+			}
+		}
+	}
+	.is-style-outline>.wp-block-button__link:not(.has-background),
+	.wp-block-button__link.is-style-outline:not(.has-background) {
+		@extend .button;
+		@extend .is-outlined;
+	}
+}
+
+.wp-block-file .wp-block-file__button,
+.comment-reply-link,
+.post-page-numbers,
+.form-submit .submit {
+	@extend .button;
+}
+
+.post-page-numbers {
+	&.current {
+		@extend .button;
+		@extend .is-outlined;
+	}
+}

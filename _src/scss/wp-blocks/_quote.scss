@@ -1,0 +1,11 @@
+@use '../foundation/import';
+
+.wp-block-quote {
+	border-left: 4px solid currentColor;
+	padding: 1em;
+	cite {
+		display: block;
+		margin-top: 1em;
+	}
+}
+
