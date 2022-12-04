@@ -23,7 +23,7 @@
 	&.is-featured-img {
 		color: var(--tsbk-color-main-font);
 	}
-	@include import.mqMin(import.$dpTabPt) {
+	@include import.mqMin(import.$dpS) {
 		padding-top: 16px;
 		padding-bottom: 16px;
 	}
@@ -91,7 +91,7 @@
 	&__lead {
 		margin-top: import.spvw(8);
 		font-weight: bold;
-		@include import.mqMin(import.$dpTabPt) {
+		@include import.mqMin(import.$dpS) {
 			margin-top: 16px;
 		}
 	}

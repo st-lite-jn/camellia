@@ -9,7 +9,7 @@
 	text-align: center;
 	color: var(--tsbk-color-white);
 	font-size: 1rem;
-	@include import.mqMin(import.$dpTabPt) {
+	@include import.mqMin(import.$dpS) {
 		padding: 8px 16px;
 	}
 	&.is-outlined {
@@ -20,7 +20,7 @@
 		@extend .button;
 		padding: import.spvw(4) import.spvw(8);
 		font-size: 0.75rem;
-		@include import.mqMin(import.$dpTabPt) {
+		@include import.mqMin(import.$dpS) {
 			padding: 8px 12px;
 		}
 	}

@@ -32,7 +32,7 @@
 		width: 360px;
 		right: - 360px;
 	}
-	@include import.mqMax(import.$dpMobile) {
+	@include import.mqMax(import.$dpXS) {
 		padding-right: import.spvw(24);
 		padding-left: import.spvw(24);
 		right: -74.66%;
@@ -52,7 +52,7 @@
 		@media screen and (min-width: 768px) and (max-width: 1365px) {
 			animation: openMedium .3s linear 1 forwards;
 		}
-		@include import.mqMax(import.$dpMobile) {
+		@include import.mqMax(import.$dpXS) {
 			animation: openSmart .3s linear 1 forwards;
 		}
 		a {
@@ -72,7 +72,7 @@
 			right: - 360px;
 			animation: closeMedium .3s linear 1 forwards;
 		}
-		@include import.mqMax(import.$dpMobile) {
+		@include import.mqMax(import.$dpXS) {
 			right: -74.66%;
 			animation: closeSmart .3s linear 1 forwards;
 		}
@@ -80,7 +80,7 @@
 	.l-gnav-main {
 		display: block;
 		height: auto;
-		@include import.mqMin(import.$dpTabPt){
+		@include import.mqMin(import.$dpS){
 			padding-bottom:74px;
 		}
 		@media screen and (min-width: 1366px) {
@@ -89,7 +89,7 @@
 		@media screen and (min-width: 768px) and (max-width: 1365px) {
 			width: 234px;
 		}
-		@include import.mqMax(import.$dpMobile){
+		@include import.mqMax(import.$dpXS){
 			width: 100%;
 			padding-bottom: import.spvw(74);
 		}
@@ -101,20 +101,20 @@
 				color: var(--tsbk-color-base-font) ;
 				font-weight: 600;
 				font-size: 1.25rem;
-				@include import.mqMin(import.$dpTabPt){
+				@include import.mqMin(import.$dpS){
 					padding-top: 16px;
 					padding-bottom: 16px;
 				}
-				@include import.mqMax(import.$dpMobile){
+				@include import.mqMax(import.$dpXS){
 					padding-top: import.spvw(16);
 					padding-bottom: import.spvw(8);
 				}
 			}
 			.l-gnav-sub {
-				@include import.mqMin(import.$dpTabPt){
+				@include import.mqMin(import.$dpS){
 					margin-left: 32px;
 				}
-				@include import.mqMax(import.$dpMobile){
+				@include import.mqMax(import.$dpXS){
 					margin-left: import.spvw(16);
 				}
 			}

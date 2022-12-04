@@ -7,7 +7,7 @@ textarea {
 	border-radius: 8px;
 	color: var(--tsbk-color-main-font);
 	font-size: 1rem;
-	@include import.mqMin(import.$dpTabPt) {
+	@include import.mqMin(import.$dpS) {
 		padding: 8px;
 	}
 	&::placeholder {

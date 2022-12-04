@@ -6,7 +6,7 @@
 	padding: import.spvw(8);
 	color: var(--tsbk-color-sub-font);
 	font-size: 1rem;
-	@include import.mqMin(import.$dpTabPt) {
+	@include import.mqMin(import.$dpS) {
 		padding: 16px;
 	}
 }

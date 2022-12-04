@@ -7,7 +7,7 @@
 	padding-bottom: import.spvw(16);
 	background-color: var(--tsbk-color-main);
 	color: var(--tsbk-color-main-font);
-	@include import.mqMin(import.$dpTabPt) {
+	@include import.mqMin(import.$dpS) {
 		padding-top: 32px;
 		padding-bottom: 32px;
 	}
@@ -15,7 +15,7 @@
 		margin-top: import.spvw(20);
 		text-align: center;
 		font-size: 0.75rem;
-		@include import.mqMin(import.$dpTabPt) {
+		@include import.mqMin(import.$dpS) {
 			margin-top: 40px;
 		}
 	}
@@ -26,12 +26,12 @@
 	&__item {
 		display: inline-block;
 		color: var(--tsbk-color-main-font);
-		@include import.mqMin(import.$dpTabPt) {
+		@include import.mqMin(import.$dpS) {
 			margin-right: 8px;
 			margin-left: 8px;
 			font-size: 0.75rem;
 		}
-		@include import.mqMax(import.$dpMobile) {
+		@include import.mqMax(import.$dpXS) {
 			margin-right:import.spvw(8);
 			margin-left: import.spvw(8);
 		}

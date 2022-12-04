@@ -6,7 +6,7 @@
 	z-index: 9100;
 	width: 100%;
 	padding-top: import.spvw(16);
-	@include import.mqMin(import.$dpTabPt) {
+	@include import.mqMin(import.$dpS) {
 		padding-top: 32px;
 	}
 	&.is-opened {

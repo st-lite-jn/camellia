@@ -4,7 +4,7 @@
 	&__list {
 		li {
 			margin-top: import.spvw(4);
-			@include import.mqMin(import.$dpTabPt) {
+			@include import.mqMin(import.$dpS) {
 				margin-top: 8px;
 			}
 			&:first-child {

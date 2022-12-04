@@ -12,14 +12,9 @@
 // Layout
 // ==========================================================================
 @use "layout/wrapper";
-@use "layout/bg-layer";
 @use "layout/header";
-@use "layout/search";
-@use "layout/gnav";
-@use "layout/col";
 @use "layout/main";
 @use "layout/footer";
-
 // ==========================================================================
 // WP Blocks
 // ==========================================================================
@@ -35,8 +30,6 @@
 @use "wp-blocks/table";
 
 //メディア
-@use "wp-blocks/image";
-@use "wp-blocks/gallery";
 @use "wp-blocks/video";
 @use "wp-blocks/cover";
 
@@ -47,7 +40,6 @@
 @use "wp-blocks/spacer";
 
 //ウィジェット
-@use "wp-blocks/archives-categories";
 @use "wp-blocks/latest-posts";
 
 //テーマ

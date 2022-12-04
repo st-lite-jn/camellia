@@ -1,6 +1,8 @@
 @use '../foundation/import';
 
-.wp-front-blocks , .is-layout-flow {
+.is-wp-post-content-blocks {
+	@include import.ptXL;
+	@include import.pbXL;
 	> * {
 		+ * {
 			@include import.mtM;
@@ -25,8 +27,5 @@
 			font-size: .5rem;
 		}
 	}
-}
-.wp-front-blocks {
-	@include import.mtXL;
 }
 

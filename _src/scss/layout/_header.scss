@@ -5,11 +5,11 @@
 	background-color: var(--tsbk-color-base);
 	width: 100%;
 	z-index: 9900;
-	@include import.mqMin(import.$dpTabPt) {
+	@include import.mqMin(import.$dpS) {
 		padding-top: 8px;
 		padding-bottom: 8px;
 	}
-	@include import.mqMax(import.$dpMobile) {
+	@include import.mqMax(import.$dpXS) {
 		padding-top: import.spvw(4);
 		padding-bottom: import.spvw(4);
 	}
@@ -31,10 +31,10 @@
 			opacity: 0;
 			pointer-events: none;
 		}
-		@include import.mqMin(import.$dpTabPt) {
+		@include import.mqMin(import.$dpS) {
 			width: 160px;
 		}
-		@include import.mqMax(import.$dpMobile) {
+		@include import.mqMax(import.$dpXS) {
 			width: import.spvw(160);
 		}
 		img {
@@ -43,7 +43,7 @@
 			height: auto;
 			max-width: 100%;
 			height: import.spvw(40);
-			@include import.mqMin(import.$dpTabPt) {
+			@include import.mqMin(import.$dpS) {
 				max-height: 44px;
 			}
 		}
@@ -68,12 +68,12 @@
 		background-color: var(--tsbk-color-acc);
 		text-align: center;
 		color: var(--tsbk-color-acc-font);
-		@include import.mqMin(import.$dpTabPt) {
+		@include import.mqMin(import.$dpS) {
 			width: 44px;
 			height: 44px;
 			margin-left: 12px;
 		}
-		@include import.mqMax(import.$dpMobile) {
+		@include import.mqMax(import.$dpXS) {
 			width: import.spvw(40);
 			height: import.spvw(40);
 			margin-left: import.spvw(10);
@@ -87,11 +87,11 @@
 	}
 }
 .l-header-utility-ico , .l-header-utility-ico--close {
-	@include import.mqMin(import.$dpTabPt) {
+	@include import.mqMin(import.$dpS) {
 		width: 17.6px;
 		height: 17.6px;
 	}
-	@include import.mqMax(import.$dpMobile) {
+	@include import.mqMax(import.$dpXS) {
 		width: import.spvw(17.6);
 		height: import.spvw(17.6);
 	}

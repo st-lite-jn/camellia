@@ -8,13 +8,13 @@
 		justify-content: flex-start;
 		&__avatar,&__author {
 			margin-right: import.spvw(4);
-			@include import.mqMin(import.$dpTabPt) {
+			@include import.mqMin(import.$dpS) {
 				margin-right: 8px;
 			}
 		}
 		&__avatar {
 			width: import.spvw(16);
-			@include import.mqMin(import.$dpTabPt) {
+			@include import.mqMin(import.$dpS) {
 				width: 32px;
 			}
 			img {
@@ -29,7 +29,7 @@
 .p-comment + .p-comment ,
 .is-child + .p-comment {
 	margin-top: import.spvw(20);
-	@include import.mqMin(import.$dpTabPt) {
+	@include import.mqMin(import.$dpS) {
 		margin-top: 40px;
 	}
 }
@@ -38,16 +38,16 @@
 	display: flex;
 	align-items: center;
 	padding: 12px 0;
-	@include import.mqMax(import.$dpMobile) {
+	@include import.mqMax(import.$dpXS) {
 		padding: import.spvw(6) 0;
 	}
 	&:not(.is-is-cookies) {
-		@include import.mqMax(import.$dpMobile) {
+		@include import.mqMax(import.$dpXS) {
 			display: block;
 		}
 	}
 	&__label {
-		@include import.mqMin(import.$dpTabPt) {
+		@include import.mqMin(import.$dpS) {
 			width: 20%;
 		}
 	}
@@ -56,7 +56,7 @@
 	}
 	&__label-for-check {
 		margin-left: import.spvw(4);
-		@include import.mqMin(import.$dpTabPt) {
+		@include import.mqMin(import.$dpS) {
 			margin-left: 8px;
 		}
 	}

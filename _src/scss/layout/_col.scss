@@ -1,6 +1,6 @@
 @use '../foundation/import';
 
-@include import.mqMin(import.$dpTabPt) {
+@include import.mqMin(import.$dpS) {
     .l-col {
         display: flex;
         flex-wrap: nowrap;

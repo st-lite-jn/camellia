@@ -3,7 +3,7 @@
 /**
 ブロックパターンで追加したクエリグループのテンプレート
 **/
-.wp-tsbk-query {
+.wp-cmll-query {
 	.wp-block-columns {
 		margin-bottom: 0;
 		&.is-layout-flex {
@@ -21,7 +21,7 @@
 			li {
 				padding: import.spvw(12) 0;
 				border-bottom: solid 1px var(--tsbk-color-border);
-				@include import.mqMin(import.$dpTabPt) {
+				@include import.mqMin(import.$dpS) {
 					padding: 20px 0;
 				}
 				&:first-child {
@@ -81,7 +81,7 @@
 		justify-content: center;
 		align-items: center;
 		@include import.mtL;
-		@include import.mqMax(import.$dpMobile) {
+		@include import.mqMax(import.$dpXS) {
 			flex-wrap: wrap !important;
 		}
 		.page-numbers , .wp-block-query-pagination-previous ,.wp-block-query-pagination-next {
@@ -94,7 +94,7 @@
 			margin: 0;
 		}
 		.wp-block-query-pagination-previous ,.wp-block-query-pagination-next {
-			@include import.mqMax(import.$dpMobile) {
+			@include import.mqMax(import.$dpXS) {
 				width: 100%;
 			}
 		}

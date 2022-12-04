@@ -2,6 +2,10 @@
 	"$schema": "https://schemas.wp.org/wp/6.1/theme.json",
     "version": 2,
     "settings": {
+        "layout": {
+            "contentSize": "80vw",
+            "wideSize": "90vw"
+        },
         "color": {
             "background":true ,
             "text": true ,
@@ -15,6 +19,11 @@
 			"duotone": [],
 			"customDuotone": true,
             "defaultDuotone": true
+        },
+        "border": {
+            "color": true,
+            "radius": true,
+            "width": true
         }
     }
 }

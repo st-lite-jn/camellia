@@ -4,7 +4,7 @@
 	position: relative;
 	min-height: import.spvw(80);
 	@include import.baseColorBlock(var(--tsbk-color-base), var(--tsbk-color-light-gray), var(--tsbk-color-base-font) );
-	@include import.mqMin(import.$dpTabPt) {
+	@include import.mqMin(import.$dpS) {
 		min-height: 96px;
 	}
 	&__label {

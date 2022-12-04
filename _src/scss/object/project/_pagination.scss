@@ -7,7 +7,7 @@
 	padding-top: import.spvw(16);
 	padding-bottom: import.spvw(16);
 	@include import.mtL;
-	@include import.mqMax(import.$dpMobile) {
+	@include import.mqMax(import.$dpXS) {
 		flex-wrap: wrap;
 		&__navigation {
 			display: flex;
@@ -21,7 +21,7 @@
 			}
 		}
 	}
-	@include import.mqMin(import.$dpTabPt) {
+	@include import.mqMin(import.$dpS) {
 
 		padding-top: 16px;
 		padding-bottom: 16px;
@@ -31,7 +31,7 @@
 	}
 	.button ,.button--reverse {
 		margin: 0 8px;
-		@include import.mqMax(import.$dpMobile) {
+		@include import.mqMax(import.$dpXS) {
 			margin-top: import.spvw(8);
 		}
 	}

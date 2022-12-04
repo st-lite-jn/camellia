@@ -2,7 +2,7 @@
 
 function cmll_rbp_query() {
     register_block_pattern(
-		'tsubaki/query/custom-query-loop',
+		'cmll/query/custom-query-loop',
 		array(
 			"title" => "カスタムクエリーループ",
 			"categories" => array('query'),

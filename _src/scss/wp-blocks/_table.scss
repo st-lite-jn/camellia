@@ -20,7 +20,7 @@
 		}
 		th,td {
 			padding: import.spvw(4);
-			@include import.mqMin(import.$dpTabPt) {
+			@include import.mqMin(import.$dpS) {
 				padding: 8px;
 			}
 		}
