@@ -18,8 +18,9 @@ if(!function_exists('cmll_output_meta')) {
 		$site_icon = get_site_icon_url();
 
 		//HTMLを初期化
-		$html_meta = "";
-		$html_meta .= "
+		$code_html = "";
+		
+		$code_html .= "
 			<meta charset=\"{$charset}\" />
 			<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
 			<title>{$cmll_title['title-tag']}</title>
@@ -27,7 +28,7 @@ if(!function_exists('cmll_output_meta')) {
 		";
 		//Jetpackを使用していない場合のみ出力
 		if(!class_exists('jetpack')) {
-			$html_meta .= "
+			$code_html .= "
 				<meta property=\"og:site_name\" content=\"{$site_name}\" />
 				<meta property=\"og:title\" content=\"{$cmll_title['title-tag']}\" />
 				<meta property=\"og:description\" content=\"{$cmll_description}\" />
@@ -39,7 +40,7 @@ if(!function_exists('cmll_output_meta')) {
 				<meta name=\"twitter:card\" content=\"summary_large_image\" />
 			";
 		}
-		echo preg_replace('/(\t|\r\n|\r|\n)/s', '', $html_meta);
+		echo preg_replace('/(\t|\r\n|\r|\n)/s', '', $code_html);
 	}
 }
 add_action( 'wp_head' , 'cmll_output_meta' , 1);

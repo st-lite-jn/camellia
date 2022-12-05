@@ -390,3 +390,5 @@ if(!function_exists('cmll_output_breadcrumb')) {
 	echo preg_replace('/(\t|\r\n|\r|\n)/s', '', $breadcrumb);
 	}
 }
+
+add_action( "wp_head", "cmll_output_breadcrumb", 1, 1 );

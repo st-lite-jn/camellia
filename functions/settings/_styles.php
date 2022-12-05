@@ -23,9 +23,9 @@ add_action('wp_enqueue_scripts' , 'cmll_enqueue_styles' );
 # -----------------------------------------------------------------
 # スタイルシートのブロック
 # -----------------------------------------------------------------
-function cmll_deregister_styles() {
-	wp_deregister_style('wp-mediaelement');
-	wp_deregister_script('mediaelement');
-}
-add_action('wp_enqueue_scripts','cmll_deregister_styles', 1);
+// function cmll_deregister_styles() {
+// 	wp_deregister_style('wp-mediaelement');
+// 	wp_deregister_script('mediaelement');
+// }
+// add_action('wp_enqueue_scripts','cmll_deregister_styles', 1);
 

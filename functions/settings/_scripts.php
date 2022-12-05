@@ -17,12 +17,12 @@ function cmll_enqueue_scripts() {
 	/**
 	 * animejs@3.2.1
 	 */
-	wp_enqueue_script( 'cmll-bundle' , 'https://cdn.jsdelivr.net/combine/npm/animejs@3.2.1', array() , $theme_version , true );
+	wp_enqueue_script( 'cmll-bundle' , 'https://cdn.jsdelivr.net/combine/npm/animejs@3.2.1', [] , $theme_version , true );
 
 	/**
 	 * main.jsの登録
 	 */
-	wp_enqueue_script( 'cmll-main' , get_template_directory_uri() . '/assets/js/main.js' , array('cmll-bundle') , $theme_version , true);
+	wp_enqueue_script( 'cmll-main' , get_template_directory_uri() . '/assets/js/main.js' , ['cmll-bundle'] , $theme_version , true);
 
 }
 
