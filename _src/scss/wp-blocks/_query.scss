@@ -3,7 +3,7 @@
 /**
 ブロックパターンで追加したクエリグループのテンプレート
 **/
-.wp-cmll-query {
+.cmll-query {
 	.wp-block-columns {
 		margin-bottom: 0;
 		&.is-layout-flex {
@@ -20,24 +20,12 @@
 		&:not(.is-flex-container) {
 			li {
 				padding: import.spvw(12) 0;
-				border-bottom: solid 1px var(--tsbk-color-border);
 				@include import.mqMin(import.$dpS) {
 					padding: 20px 0;
 				}
 				&:first-child {
 					border-top: solid 1px var(--tsbk-color-border);
 				}
-			}
-		}
-		.wp-block-post-title {
-			a {
-				text-decoration: none;
-				&:hover{
-					text-decoration: underline;
-				}
-			}
-			&:not([style]) a {
-				color: var(--tsbk-color-base-font);
 			}
 		}
 		.is-thumbnail {
@@ -50,7 +38,7 @@
 					align-items: center;
 					aspect-ratio: 3/2;
 					width: 100%;
-					background-color: var( --tsbk-color-sub  );
+					background-color: var( --tsbk-color-sub );
 					border: solid 1px var( --tsbk-color-border );
 					color: var( --tsbk-color-sub-font );
 					font-size: 2rem;
@@ -87,7 +75,6 @@
 		.page-numbers , .wp-block-query-pagination-previous ,.wp-block-query-pagination-next {
 			@extend .button;
 			&.current {
-				@extend .is-outlined
 			}
 		}
 		.wp-block-query-pagination-numbers, .wp-block-query-pagination-previous , .wp-block-query-pagination-next {

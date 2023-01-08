@@ -9,16 +9,15 @@ const headerFixed = () => {
 	let headerHeight = uniqueEl.header.offsetHeight;
 	let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
-	if(!uniqueEl.gnav.classList.contains("is-opened")) {
-		if( scrollPosition >= headerHeight) {
-			uniqueEl.header.classList.add("is-scrolled");
-			uniqueEl.header.style.top = wpadminbarHeight + "px";
-			uniqueEl.wrapper.style.paddingTop = headerHeight + "px";
-		} else {
-			uniqueEl.header.classList.remove("is-scrolled");
-			uniqueEl.header.style.top = null;
-			uniqueEl.wrapper.style.paddingTop = null;
-		}
+	if( scrollPosition >= headerHeight) {
+		uniqueEl.header.classList.add("is-scrolled");
+		uniqueEl.header.style.top = wpadminbarHeight + "px";
+		uniqueEl.wrapper.style.paddingTop = headerHeight + "px";
+	} else {
+		uniqueEl.header.classList.remove("is-scrolled");
+		uniqueEl.header.style.top = null;
+		uniqueEl.wrapper.style.paddingTop = null;
 	}
+
 }
 export {headerFixed};

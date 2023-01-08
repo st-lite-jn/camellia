@@ -1,0 +1,15 @@
+@use '../foundation/import';
+
+.cmll-title {
+	&__item {
+		* {
+			color: #fff !important;
+			text-shadow: 0 0 3px import.$black;
+		}
+		&__heading {
+			&.is-front {
+				font-size: 2rem;
+			}
+		}
+	}
+}

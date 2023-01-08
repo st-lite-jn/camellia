@@ -2,19 +2,12 @@
 .button {
 	display: inline-block;
 	padding: import.spvw(8) import.spvw(12);
-	background: var(--tsbk-color-link);
-	border : solid 1px var(--tsbk-color-link);
 	border-radius: 8px;
 	text-decoration: none;
 	text-align: center;
-	color: var(--tsbk-color-white);
 	font-size: 1rem;
 	@include import.mqMin(import.$dpS) {
 		padding: 8px 16px;
-	}
-	&.is-outlined {
-		background: var(--tsbk-color-white);
-		color: var(--tsbk-color-link);
 	}
 	&--mini {
 		@extend .button;
@@ -26,20 +19,6 @@
 	}
 }
 
-a,button,input {
-	&.button {
-		&:hover {
-			background: var(--tsbk-color-white);
-			color: var(--tsbk-color-link);
-		}
-		&.is-outlined {
-			&:hover {
-				background: var(--tsbk-color-link);
-				color: var(--tsbk-color-white);
-			}
-		}
-	}
-}
 
 //ブロックエディタのボタン
 .wp-block-buttons {
@@ -53,7 +32,6 @@ a,button,input {
 	.is-style-outline>.wp-block-button__link:not(.has-background),
 	.wp-block-button__link.is-style-outline:not(.has-background) {
 		@extend .button;
-		@extend .is-outlined;
 	}
 }
 
@@ -67,6 +45,5 @@ a,button,input {
 .post-page-numbers {
 	&.current {
 		@extend .button;
-		@extend .is-outlined;
 	}
 }

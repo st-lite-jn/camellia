@@ -1,0 +1,50 @@
+@use '../foundation/import';
+
+.cmll-header {
+	transition: .5s;
+	width: 100%;
+	z-index: 9900;
+	@include import.mqMin(import.$dpS) {
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	@include import.mqMax(import.$dpXS) {
+		padding-top: import.spvw(4);
+		padding-bottom: import.spvw(4);
+	}
+	&.is-scrolled {
+		position: fixed;
+		top: 0;
+		box-shadow: 0 1px 5px 0 var(--tsbk-color-black);
+	}
+	&__sitename {
+		display: flex;
+		flex-direction: column;
+		gap: .5rem;
+		@include import.mqMin(import.$dpS) {
+			width: 25%;
+		}
+		&__logo {
+			width: 100%;
+			img {
+				width: 240px;
+				max-width: 100%;
+				height: auto;
+				@include import.mqMin(import.$dpS) {
+					width: 240px;
+				}
+			}
+		}
+		&__label {
+			width: 100%;
+			font-size: import.spvw(8);
+			@include import.mqMin(import.$dpS) {
+				font-size: 12px;
+			}
+		}
+	}
+	&__gnav {
+		flex: 1;
+	}
+}
+

@@ -41,9 +41,7 @@
 @mixin catLabel {
 	display: inline-block;
 	padding: functions.spvw(4) functions.spvw(8);
-	background-color: var(--tsbk-color-acc);
 	border-radius: functions.spvw(10);
-	color: var(--tsbk-color-acc-font);
 	font-size: .75rem;
 	@include mqMin(display.$dpS) {
 		border-radius: 10px;
@@ -65,28 +63,6 @@
 	}
 	&:after {
 		clear: both;
-	}
-}
-
-@mixin wpBlocks {
-	.editor-styles-wrapper {
-		@content;
-	}
-}
-@mixin container {
-	box-sizing: border-box;
-	padding-right: functions.spvw(16);
-	padding-left: functions.spvw(16);
-	@include mqMin(display.$dpS) {
-		padding-right: 36px;
-		padding-left: 36px;
-	}
-	@include mqMin(display.$dpXL) {
-		max-width: 1366px;
-		margin-right: auto;
-		margin-left: auto;
-		padding-left: 36px;
-		padding-right: 36px;
 	}
 }
 
@@ -230,5 +206,41 @@
 	@include mqMax(display.$dpXS) {
 		padding-right: functions.spvw(16);
 		padding-left: functions.spvw(16);
+	}
+}
+
+
+@mixin cmlWpBlockInit {
+	@include ptL;
+	@include pbXL;
+	> * {
+		+ * {
+			@include mtM;
+		}
+	}
+	h1,h2,h3,h4,h5,h6 {
+		+ * {
+			@include mtS;
+		}
+	}
+	p {
+		+ p {
+			@include mtXS;
+		}
+	}
+	ul , ol {
+		&:not([class]) {
+			padding-left: 1rem;
+			margin-left: 1rem;
+		}
+	}
+	figure {
+		margin-bottom: 0;
+		figcaption {
+			margin-bottom: 0;
+			@include mtXS;
+			text-align: center;
+			font-size: .5rem;
+		}
 	}
 }

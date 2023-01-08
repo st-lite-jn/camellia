@@ -1,0 +1,5 @@
+@use '../foundation/import';
+
+.cmll-content-block {
+	@include import.cmlWpBlockInit;
+}

@@ -9,16 +9,16 @@
 @use "foundation/init";
 
 // ==========================================================================
-// Layout
+// Parts
 // ==========================================================================
-@use "layout/wrapper";
-@use "layout/header";
-@use "layout/main";
-@use "layout/footer";
+@use "parts/header";
+@use "parts/title";
+@use "parts/content";
+@use "parts/footer";
+@use "parts/breadcrumb";
 // ==========================================================================
 // WP Blocks
 // ==========================================================================
-@use "wp-blocks/layout-front";
 
 //テキスト
 @use "wp-blocks/heading";
@@ -50,7 +50,6 @@
 
 //オプション
 @use "wp-blocks/link";
-@use "wp-blocks/marquee";
 
 // ==========================================================================
 // Object
@@ -67,17 +66,4 @@
 // -----------------------------------------------------------------
 // Component
 // -----------------------------------------------------------------
-@use "object/component/container";
 @use "object/component/input";
-
-// -----------------------------------------------------------------
-// Project
-// -----------------------------------------------------------------
-@use "object/project/breadcrumb";
-@use "object/project/pagination";
-@use "object/project/archive";
-@use "object/project/card";
-@use "object/project/content-header";
-@use "object/project/comment";
-
-

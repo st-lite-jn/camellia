@@ -31,7 +31,7 @@ add_post_type_support( 'page', 'excerpt' );
 /*
 * テーマカスタマイザーのカスタムロゴ機能を有効化
 */
-add_theme_support('custom-logo');
+add_theme_support( 'custom-logo' );
 
 /*
 * 「投稿」の「カテゴリー」と「タグ」の非表示化

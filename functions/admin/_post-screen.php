@@ -10,7 +10,7 @@ function cmll_enqueue_block_editor_style() {
 	add_theme_support( 'editor-styles' );
 	add_editor_style( [
 		'//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap'
-		//,'assets/css/editor.css'
+		,'assets/css/editor.css'
 	]);
 };
 

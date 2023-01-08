@@ -1,6 +1,6 @@
-@use '../../foundation/import';
+@use '../foundation/import';
 
-.p-breadcrumb {
+.cmll-breadcrumb {
 	display: flex;
 	padding-top: import.spvw(8);
 	padding-bottom: import.spvw(8);
@@ -21,15 +21,10 @@
 	&__list {
 		display: flex;
 		align-items: center;
-		color: var(--tsbk-color-base-font) ;
 		text-overflow: ellipsis;
 		font-size: .75rem;
 	}
 	&__item {
 		text-decoration: none;
-		color: var(--tsbk-color-base-font);
-		span {
-			color: var(--tsbk-color-link);
-		}
 	}
 }

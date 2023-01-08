@@ -3,12 +3,11 @@
 function cmll_rbp_query() {
     register_block_pattern(
 		'cmll/query/custom-query-loop',
-		array(
-			"title" => "カスタムクエリーループ",
-			"categories" => array('query'),
-			'description' => 'サムネイル画像付きのクエリーループ',
-			'content' => '
-			<!-- wp:query {"queryId":1,"query":{"perPage":"4","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"list","columns":3},"className":"wp-cmll-query"} -->
+		[ "title" => "カスタムクエリーループ",
+		  "categories" => ['query'],
+		  'description' => 'サムネイル画像付きのクエリーループ',
+		   'content' => '
+<!-- wp:query {"queryId":1,"query":{"perPage":"4","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"list","columns":3},"className":"cmll-query"} -->
 <div class="wp-block-query wp-cmll-query"><!-- wp:post-template -->
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"25%","className":"is-thumbnail"} -->
@@ -46,7 +45,7 @@ function cmll_rbp_query() {
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query -->
 '
-		)
+		]
 	);
 }
 add_action( 'init', 'cmll_rbp_query' );

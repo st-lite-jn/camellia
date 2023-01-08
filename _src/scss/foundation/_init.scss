@@ -2,13 +2,11 @@
 html {
 	font-size: import.spvw(16);
 	@include import.mqMin(import.$dpS) {
+		font-size: 14px;
+	}
+	@include import.mqMin(import.$dpL) {
 		font-size: 16px;
 	}
-}
-body {
-	background-color: var(--tsbk-color-base);
-	color: var(--tsbk-color-base-font);
-	font-family: 'Noto Sans JP', sans-serif;
 }
 img {
 	max-width: 100%;
@@ -22,18 +20,6 @@ h1,h2,h3,h4,h5,h6,strong,b {
 		display: none;
 	}
 }
-a {
-	text-decoration: underline;
-	color : var(--tsbk-color-link);
-	&:hover {
-		text-decoration: none;
-	}
-}
-
-ul,ol {
-	list-style: none;
-}
-
 #wpadminbar {
 	position: fixed !important;
 }

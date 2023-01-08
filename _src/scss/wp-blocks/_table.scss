@@ -5,17 +5,17 @@
 	table {
 		thead {
 			tr {
-				border-bottom: solid 2px var(--tsbk-color-border) ;
+
 			}
 		}
 		tbody {
 			tr {
-				border-bottom: dotted 1px var(--tsbk-color-border) ;
+
 			}
 		}
 		tfoot {
 			tr {
-				border-top: solid 2px var(--tsbk-color-border) ;
+
 			}
 		}
 		th,td {
@@ -31,8 +31,6 @@
 			tbody{
 				tr {
 					&:nth-child(odd) {
-						background-color:var(--tsbk-color-sub);
-						color: var(--tsbk-color-sub-font );
 					}
 				}
 			}
@@ -41,7 +39,7 @@
 	&.is-selected {
 		table {
 			th,td {
-				outline: var(--tsbk-color-base-font) dashed thin;
+
 			}
 		}
 	}
