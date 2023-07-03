@@ -245,11 +245,11 @@ function cmll_global_var_title() {
 	endif;
 	//定義するグローバル変数を初期化
 	global $cmll_title;
-	$cmll_title = array(
-		"site-name" => $site_name, //サイト名　cmll_glb_ttl()["site-name"]
-		"content-label" => $content_name, //表示中コンテンツの名前 cmll_glb_ttl()["content-label"]
-		"title-tag" => $title_tag, //タイトルタグ cmll_glb_ttl()["title-tag"]
-	);
+	$cmll_title = [
+		"site-name" => $site_name, //サイト名　cmll_title["site-name"]
+		"content-label" => $content_name, //表示中コンテンツの名前 cmll_title["content-label"]
+		"title-tag" => $title_tag, //タイトルタグ cmll_title["title-tag"]
+	];
 }
 endif;
 

@@ -18,7 +18,7 @@ h5 ,h6 {
 h1,h2,h3,h4,h5,h6 {
 	//ボーダーライン
 	&.is-style-border {
-		border-left: solid 8px var(--tsbk-color-acc);
+		border-left: solid 8px var(--cmll-color-acc);
 		padding: import.spvw(4) import.spvw(8);
 		@include import.mqMin(import.$dpS) {
 			padding: 8px 16px;
@@ -41,7 +41,7 @@ h1,h2,h3,h4,h5,h6 {
 			right: auto;
 			bottom: 0;
 			left: 50%;
-			background-color: var(--tsbk-color-acc);
+			background-color: var(--cmll-color-acc);
 			transform: translateX(-50%);
 		}
 	}

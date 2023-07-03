@@ -1,54 +1,81 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.1/theme.json",
-    "version": 2,
-    "styles" : {
-        "color": {
-			"text": "#333333",
-            "background": "#ffffff"
+	"$schema": "https://schemas.wp.org/wp/6.2/theme.json",
+	"version": 2,
+	"settings": {
+		"border": {
+			"color": true,
+			"radius": true,
+			"width": true
 		},
-        "typography": {
-            "fontFamily": "\"Noto Sans JP\", sans-serif",
-			"lineHeight": "1.5"
-		},
-        "elements": {
-            "link": {
-                "color": {
-                    "text": "#004D9F"
-                },
-                "typography": {
-                    "textDecoration": "none"
-                },
-                ":hover": {
-                    "typography": {
-                        "textDecoration": "underline"
-                    }
-                }
-            }
-        }
-    },
-    "settings": {
-        "layout": {
-            "contentSize": "95vw",
-            "wideSize": "100vw"
-        },
-        "color": {
-            "background":true ,
-            "text": true ,
-            "link": true,
-            "custom": true,
-            "defaultPalette": true,
-            "palette": [],
-			"customGradient": true,
-			"defaultGradients": true,
-			"gradients": [],
-			"duotone": [],
+		"color": {
+			"background": true,
+			"custom": true,
 			"customDuotone": true,
-            "defaultDuotone": true
-        },
-        "border": {
-            "color": true,
-            "radius": true,
-            "width": true
-        }
-    }
+			"customGradient": true,
+			"defaultDuotone": true,
+			"defaultGradients": true,
+			"defaultPalette": true,
+			"duotone": [],
+			"gradients": [],
+			"link": true,
+			"palette":[
+				{
+					"name": "Dark Black",
+					"slug": "dark-black",
+					"color": "#1E2022"
+				},
+				{
+					"name": "Light white",
+					"slug": "light-white",
+					"color": "#DDDDDD"
+				},
+				{
+					"name": "Camellia",
+					"slug": "camellia",
+					"color": "#e27434"
+				},
+				{
+					"name": "Vivid Blue",
+					"slug": "vivid-blue",
+					"color": "#004D9F"
+				}
+			],
+			"text": true
+		},
+		"layout": {
+			"contentSize": "96vw",
+			"wideSize": "100vw"
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--dark-black)",
+			"text": "var(--wp--preset--color--light-white)"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--camellia)"
+				},
+				"typography": {
+					"textDecoration": "none"
+				},
+				":hover": {
+					"typography": {
+						"textDecoration": "underline"
+					}
+				}
+			},
+			"button": {
+				"color": {
+					"text": "var(--wp--preset--color--light-white)",
+					"background":"var(--wp--preset--color--vivid-blue)"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "\"Noto Sans JP\", sans-serif",
+			"lineHeight": "1.5"
+		}
+	}
 }

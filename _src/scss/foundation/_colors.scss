@@ -4,27 +4,23 @@ $gray : #ccc;
 :root {
 
 	//ベースカラー
-	--tsbk-color-base : #ffffff;
-	--tsbk-color-base-font : #333333;
+	--cmll-color-base : #ffffff;
+	--cmll-color-base-font : #333333;
 
 	//メインカラー
-	--tsbk-color-main : #d7d7d7;
-	--tsbk-color-main-font : #ffffff;
+	--cmll-color-main : #d7d7d7;
+	--cmll-color-main-font : #ffffff;
 
 	//サブカラー
-	--tsbk-color-sub : #e2e2e2;
-	--tsbk-color-sub-font : #333333;
+	--cmll-color-sub : #e2e2e2;
+	--cmll-color-sub-font : #333333;
 
 	//アクセントカラー
-	--tsbk-color-acc : #004D9F;
-	--tsbk-color-acc-font : #ffffff;
+	--cmll-color-acc : #004D9F;
+	--cmll-color-acc-font : #ffffff;
 
-	--tsbk-color-link : #003366;
+	--cmll-color-link : #003366;
 
-	--tsbk-color-border : #999999;
-
-	--tsbk-color-white :#{$white};
-	--tsbk-color-gray : #{$gray};
-	--tsbk-color-black : #{$black};
+	--cmll-color-border : #999999;
 
 }

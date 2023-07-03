@@ -11,9 +11,9 @@
 	&.is-cat {
 		a {
 			padding: import.spvw(4) import.spvw(8);
-			background-color: var(--tsbk-color-acc);
+			background-color: var(--cmll-color-acc);
 			border-radius: import.spvw(10);
-			color: var(--tsbk-color-acc-font);
+			color: var(--cmll-color-acc-font);
 			font-size: .75rem;
 			transition: .5s;
 			@include import.mqMin(import.$dpS) {

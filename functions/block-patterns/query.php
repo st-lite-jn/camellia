@@ -8,7 +8,7 @@ function cmll_rbp_query() {
 		  'description' => 'サムネイル画像付きのクエリーループ',
 		   'content' => '
 <!-- wp:query {"queryId":1,"query":{"perPage":"4","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"list","columns":3},"className":"cmll-query"} -->
-<div class="wp-block-query wp-cmll-query"><!-- wp:post-template -->
+<div class="wp-block-query cmll-query"><!-- wp:post-template -->
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"25%","className":"is-thumbnail"} -->
 <div class="wp-block-column is-thumbnail" style="flex-basis:25%"><!-- wp:post-featured-image {"isLink":true} /--></div>

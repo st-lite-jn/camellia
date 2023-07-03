@@ -4,6 +4,8 @@
 	transition: .5s;
 	width: 100%;
 	z-index: 9900;
+	background-color: var(--wp--preset--color--dark-black);
+	color: var(--wp--preset--color--light-white);
 	@include import.mqMin(import.$dpS) {
 		padding-top: 8px;
 		padding-bottom: 8px;
@@ -15,7 +17,7 @@
 	&.is-scrolled {
 		position: fixed;
 		top: 0;
-		box-shadow: 0 1px 5px 0 var(--tsbk-color-black);
+		box-shadow: 0 1px 5px 0 var(--wp--preset--color--dark-black);
 	}
 	&__sitename {
 		display: flex;

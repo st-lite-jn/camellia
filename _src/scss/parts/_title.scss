@@ -1,9 +1,10 @@
 @use '../foundation/import';
 
 .cmll-title {
+	background-color: var(--wp--preset--color--camellia);
 	&__item {
 		* {
-			color: #fff !important;
+			color: var(--wp--preset--color--light-white) !important;
 			text-shadow: 0 0 3px import.$black;
 		}
 		&__heading {
